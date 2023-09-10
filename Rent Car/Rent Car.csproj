@@ -1,0 +1,208 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{AB753661-B4FB-43C2-BE7A-7CAE69097F62}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>Rent_Car</RootNamespace>
+    <AssemblyName>Rent Car</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Bunifu_UI_v1.52">
+      <HintPath>..\..\..\..\Downloads\Bunifu_UI_v1.52.dll</HintPath>
+    </Reference>
+    <Reference Include="ComponentFactory.Krypton.Toolkit">
+      <HintPath>..\..\..\..\Downloads\Krypton-master\Bin\ComponentFactory.Krypton.Toolkit.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Design" />
+    <Reference Include="System.Management" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="1D_Hire_Form.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="1D_Hire_Form.Designer.cs">
+      <DependentUpon>1D_Hire_Form.cs</DependentUpon>
+    </Compile>
+    <Compile Include="About_Us_Form.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="About_Us_Form.Designer.cs">
+      <DependentUpon>About_Us_Form.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Dashboard.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Dashboard.Designer.cs">
+      <DependentUpon>Dashboard.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Drivers_Register_Form.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Drivers_Register_Form.Designer.cs">
+      <DependentUpon>Drivers_Register_Form.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Driver_Signup_Form.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Driver_Signup_Form.Designer.cs">
+      <DependentUpon>Driver_Signup_Form.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Give_1D_Hiring_Form.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Give_1D_Hiring_Form.Designer.cs">
+      <DependentUpon>Give_1D_Hiring_Form.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Give_Long_Hiring_Form.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Give_Long_Hiring_Form.Designer.cs">
+      <DependentUpon>Give_Long_Hiring_Form.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Give_Renting_Form.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Give_Renting_Form.Designer.cs">
+      <DependentUpon>Give_Renting_Form.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Login_Form.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Login_Form.Designer.cs">
+      <DependentUpon>Login_Form.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Long_Hire_Form.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Long_Hire_Form.Designer.cs">
+      <DependentUpon>Long_Hire_Form.cs</DependentUpon>
+    </Compile>
+    <Compile Include="My_Profile_Form.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="My_Profile_Form.Designer.cs">
+      <DependentUpon>My_Profile_Form.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Rent_Form.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Rent_Form.Designer.cs">
+      <DependentUpon>Rent_Form.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Splash_Start_Form.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Splash_Start_Form.Designer.cs">
+      <DependentUpon>Splash_Start_Form.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Vehicles_Register_Form.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Vehicles_Register_Form.Designer.cs">
+      <DependentUpon>Vehicles_Register_Form.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="1D_Hire_Form.resx">
+      <DependentUpon>1D_Hire_Form.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="About_Us_Form.resx">
+      <DependentUpon>About_Us_Form.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Dashboard.resx">
+      <DependentUpon>Dashboard.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Drivers_Register_Form.resx">
+      <DependentUpon>Drivers_Register_Form.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Driver_Signup_Form.resx">
+      <DependentUpon>Driver_Signup_Form.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Give_1D_Hiring_Form.resx">
+      <DependentUpon>Give_1D_Hiring_Form.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Give_Long_Hiring_Form.resx">
+      <DependentUpon>Give_Long_Hiring_Form.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Give_Renting_Form.resx">
+      <DependentUpon>Give_Renting_Form.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Login_Form.resx">
+      <DependentUpon>Login_Form.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Long_Hire_Form.resx">
+      <DependentUpon>Long_Hire_Form.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="My_Profile_Form.resx">
+      <DependentUpon>My_Profile_Form.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="Rent_Form.resx">
+      <DependentUpon>Rent_Form.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Splash_Start_Form.resx">
+      <DependentUpon>Splash_Start_Form.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Vehicles_Register_Form.resx">
+      <DependentUpon>Vehicles_Register_Form.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
